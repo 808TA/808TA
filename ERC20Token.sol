@@ -1,3 +1,5 @@
+pragma solidity ^0.4.11;
+
 contract Token808 {
 
     string public name;
@@ -16,7 +18,7 @@ contract Token808 {
         totalSupply = 8080808080808 * (10 ** uint256(decimals));
         balanceOf[msg.sender] = totalSupply;
         name = "808token";
-        symbol = "808token";
+        symbol = "808T";
     }
 
     function _transfer(address _from, address _to, uint256 _value) internal {
